@@ -34,7 +34,7 @@ battery all {
 }
 
 disk "/" {
-        format = "%avail"
+        format = "Disk: %avail"
 }
 
 cpu_usage {
