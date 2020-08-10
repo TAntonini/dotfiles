@@ -197,3 +197,17 @@ bar {
 
 # Set external monitor left of laptop display if connected
 exec --no-startup-id xrandr | grep "DP-0.1 connected" && xrandr --output DP-0.1 --auto --primary --left-of DP-4
+
+# Gaps
+# Disable window titlebars for activating gaps
+for_window [class=".*"] border pixel 1
+
+# Gaps size
+gaps inner 8
+
+# Only enable gaps on a workspace when there is at least one container
+smart_gaps on
+
+# Activate smart borders (always)
+smart_borders on
+
