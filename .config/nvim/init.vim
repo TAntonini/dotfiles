@@ -2,6 +2,7 @@ call plug#begin(stdpath('data') . '/plugged')
 
 Plug 'arcticicestudio/nord-vim'
 Plug 'morhetz/gruvbox'
+Plug 'scrooloose/nerdtree'
 
 " Initialize plugin system
 call plug#end()
@@ -30,3 +31,12 @@ set termguicolors
 colorscheme nord
 " let g:gruvbox_italic=1
 " colorscheme gruvbox
+
+" Open a NERDTree automatically when vim starts up if no files were specified
+autocmd StdinReadPre * let s:std_in=1
+autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
+" Go to previous (last accessed) window.
+autocmd VimEnter * wincmd p
+" Close NERDTree if only left window remaining
+autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
+
