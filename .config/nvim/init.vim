@@ -1,6 +1,7 @@
 call plug#begin(stdpath('data') . '/plugged')
 
 Plug 'arcticicestudio/nord-vim'
+Plug 'morhetz/gruvbox'
 
 " Initialize plugin system
 call plug#end()
@@ -27,3 +28,5 @@ set list                " Show problematic characters.
 
 set termguicolors
 colorscheme nord
+" let g:gruvbox_italic=1
+" colorscheme gruvbox
