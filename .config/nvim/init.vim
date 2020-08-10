@@ -1,5 +1,7 @@
 call plug#begin(stdpath('data') . '/plugged')
 
+Plug 'arcticicestudio/nord-vim'
+
 " Initialize plugin system
 call plug#end()
 
@@ -22,3 +24,6 @@ if &listchars ==# 'eol:$'
   set listchars=tab:>\ ,trail:-,extends:>,precedes:<,nbsp:+
 endif
 set list                " Show problematic characters.
+
+set termguicolors
+colorscheme nord
