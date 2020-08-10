@@ -18,7 +18,7 @@ order += "memory"
 order += "tztime local"
 
 battery all {
-        format = "Bat: %status %percentage %remaining"
+        format = "Bat: %percentage %remaining"
         status_chr = ⚡
         status_bat = 🔋
         status_unk = ?
