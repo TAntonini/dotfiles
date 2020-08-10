@@ -195,9 +195,6 @@ bar {
         status_command i3status
 }
 
-# Set external monitor left of laptop display if connected
-exec --no-startup-id xrandr | grep "DP-0.1 connected" && xrandr --output DP-0.1 --auto --primary --left-of DP-4
-
 # Gaps
 # Disable window titlebars for activating gaps
 for_window [class=".*"] border pixel 1

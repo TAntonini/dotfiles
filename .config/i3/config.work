@@ -11,3 +11,6 @@ workspace $ws8 output DP-4
 workspace $ws9 output DP-4
 workspace $ws10 output DP-4
 
+# Set external monitor left of laptop display if connected
+exec --no-startup-id xrandr | grep "DP-0.1 connected" && xrandr --output DP-0.1 --auto --primary --left-of DP-4
+
