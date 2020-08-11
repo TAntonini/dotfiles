@@ -221,7 +221,7 @@ bar {
 
 # Gaps
 # Disable window titlebars for activating gaps
-for_window [class=".*"] border pixel 1
+for_window [class=".*"] border pixel 5
 
 # Gaps size
 gaps inner 8
