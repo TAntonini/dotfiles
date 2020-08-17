@@ -144,6 +144,7 @@ bindsym $mod+Shift+0 move container to workspace $ws10
 
 assign [class="Firefox"] $ws1
 assign [class="Google-chrome"] $ws6
+for_window [class="Pavucontrol"] floating enable
 
 # Make the currently focused window a scratchpad
 bindsym $mod+Shift+minus move scratchpad
