@@ -32,6 +32,7 @@ exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
 # and nm-applet is a desktop environment-independent system tray GUI for it.
 exec_always --no-startup-id nm-applet
 exec_always --no-startup-id volumeicon
+exec --no-startup-id udiskie &
 
 # Set wallpaper, wallpapers shall be located at ~/Pictures/Wallpapers/
 exec_always --no-startup-id ~/.fehbg &
