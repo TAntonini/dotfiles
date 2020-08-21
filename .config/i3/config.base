@@ -144,6 +144,7 @@ bindsym $mod+Shift+9 move container to workspace $ws9
 bindsym $mod+Shift+0 move container to workspace $ws10
 
 assign [class="Firefox"] $ws1
+assign [class="okular"] $ws4
 assign [class="Google-chrome"] $ws6
 for_window [class="Pavucontrol"] floating enable
 for_window [class="Spotify"] move to workspace $ws10
