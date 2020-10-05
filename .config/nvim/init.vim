@@ -13,15 +13,14 @@ call plug#end()
 set noswapfile
 
 filetype plugin indent on
-" show existing tab with 4 spaces width
-set tabstop=4
-" when indenting with '>', use 4 spaces width
-set shiftwidth=4
-" On pressing tab, insert 4 spaces
-set expandtab
 
 " Line number
 set number
+
+augroup filetype_c
+    autocmd!
+    autocmd FileType c,h set colorcolumn=80 tabstop=4 shiftwidth=4 expandtab
+augroup END
 
 " Tell Vim which characters to show for expanded TABs,
 " trailing whitespace, and end-of-lines. VERY useful!
