@@ -29,8 +29,8 @@ exec --no-startup-id /usr/lib/policykit-1-gnome/polkit-gnome-authentication-agen
 
 # NetworkManager is the most popular way to manage wireless networks on Linux,
 # and nm-applet is a desktop environment-independent system tray GUI for it.
-exec --no-startup-id nm-applet
-exec --no-startup-id volumeicon
+exec_always --no-startup-id nm-applet
+exec_always --no-startup-id volumeicon
 exec --no-startup-id udiskie &
 
 # Use pactl to adjust volume in PulseAudio.
