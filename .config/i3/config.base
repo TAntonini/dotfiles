@@ -33,6 +33,10 @@ exec_always --no-startup-id nm-applet
 exec_always --no-startup-id volumeicon
 exec --no-startup-id udiskie &
 
+# Set a scratchpad with terminal instance
+exec --no-startup-id i3-sensible-terminal -n dropdown
+for_window [instance="dropdown"] move scratchpad
+
 # Set wallpaper, wallpapers shall be located at ~/Pictures/Wallpapers/
 exec_always --no-startup-id ~/.fehbg &
 
