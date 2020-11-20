@@ -1,1 +1,3 @@
 #include ".Xresources.d/nord-theme"
+
+Xft.dpi: 96
