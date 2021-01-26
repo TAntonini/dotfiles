@@ -30,3 +30,6 @@ export PATH="$HOME/.cargo/bin:$PATH"
 
 # i3-sensible terminal
 export TERMINAL="alacritty"
+
+# For qt5 theme with qt5ct
+export QT_QPA_PLATFORMTHEME=qt5ct
