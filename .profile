@@ -28,6 +28,10 @@ fi
 
 export PATH="$HOME/.cargo/bin:$PATH"
 
+if [ -f "$HOME/.bashrc" ]; then
+	. "$HOME/.profile_local"
+fi
+
 # i3-sensible terminal
 export TERMINAL="alacritty"
 
