@@ -1,6 +1,7 @@
 -- General
 require('plugins')
 require('settings')
+require('keymappings')
 
 -- Plugins
 require('p-lightline')
