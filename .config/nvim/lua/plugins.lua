@@ -15,5 +15,6 @@ return require('packer').startup(function()
     requires = {{'nvim-lua/popup.nvim'}, {'nvim-lua/plenary.nvim'}}
   }
   use 'preservim/nerdtree'
+  use 'puremourning/vimspector'
   use 'tpope/vim-fugitive'
 end)
