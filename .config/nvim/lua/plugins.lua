@@ -6,6 +6,7 @@ return require('packer').startup(function()
 
   use 'airblade/vim-gitgutter'
   use 'arcticicestudio/nord-vim'
+  use 'caenrique/nvim-toggle-terminal'
   use 'hrsh7th/nvim-compe'
   use 'itchyny/lightline.vim'
   use 'neovim/nvim-lspconfig'
