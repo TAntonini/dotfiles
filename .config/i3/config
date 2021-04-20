@@ -300,7 +300,7 @@ set $nord15  #B48EAD
 # Theme colors
 # class                 border  backgr. text    indic.  child_border
 client.focused          $nord4  $nord1  $nord4  $nord4  $nord4
-client.focused_inactive $nord0  $nord0  $nord9  $nord4  $nord0
+client.focused_inactive $nord4  $nord1  $nord4  $nord4  $nord4
 client.unfocused        $nord0  $nord0  $nord9  $nord4  $nord0
 client.urgent           $nord12 $nord0  $nord8  $nord4  $nord12
 client.placeholder      #000000 #0c0c0c #ffffff #000000
